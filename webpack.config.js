@@ -30,10 +30,15 @@ module.exports = {
     ]
   },
   node: {
-    global: true,
+    global: false,
     Buffer: true,
     crypto: 'empty',
     net: 'empty',
     dns: 'empty'
-  }
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      global: require.resolve('./global.js')
+    })
+  ]
 };

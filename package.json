@@ -1,7 +1,7 @@
 {
-  "name": "joi-browser",
+  "name": "joi-browser-noeval",
   "version": "13.4.0",
-  "description": "joi object schema validation bundled for the browser",
+  "description": "joi object schema validation bundled for the browser with no eval",
   "main": "./dist/joi-browser.js",
   "scripts": {
     "prepublish": "npm run build-webpack",
